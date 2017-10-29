@@ -46,7 +46,40 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+.information_about_team {
+    align-items: stretch;
+    display: flex;
+    background-color: #BCBEC0;
+    max-height: none;
+    text-align: justify;
+    min-height: 800px;
+    margin-top: 200px;
+    margin-bottom: 20px;
 
+}
+main image{
+    width: 50px;
+    height: 50px;
+
+}
+main article
+{
+    margin: 20px;
+    background-color: #00A8B5;
+    padding: 20px;
+}
+main article h1
+{
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+}
+main article p
+{
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    float: right;
+
+}
 
 /* -------------------------------------------- */
 
