@@ -47,6 +47,63 @@ table {
     border-spacing: 0;
 }
 
+html, body {
+    height: 100%;
+    width: 100%;
+}
 
 /* -------------------------------------------- */
 
+/* ---------------Banner-----------------------*/
+main {
+    height: 100%;
+}
+
+.banner {
+    min-height: 100%;
+    min-width: 100%;
+    background-image: url("../images/boat18.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_div {
+    text-align: center;
+}
+
+.banner_text {
+    font-family: 'Lato', sans-serif;
+    color: #fbfdff;
+    background-color: rgba(15, 63, 118, 0.71);
+    text-align: center;
+    padding: 2em;
+    margin: 0 5em;
+    width: 75em;
+}
+
+h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(15, 63, 118);
+    margin: 2em;
+    width: 12em;
+    height: 3em;
+    border: none;
+}
+
+button a {
+    text-decoration: none;
+    height: 20px;
+    width: 50px;
+    font-size: 20px;
+    color: #fbfdff;
+}
