@@ -30,6 +30,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 ol, ul {
     list-style: none;
@@ -48,5 +51,77 @@ table {
 }
 
 
-/* -------------------------------------------- */
+/* -----------------Footer/form---------------- */
 
+main {
+    flex: 1 0 auto;
+}
+
+html {
+    min-height: 100%;
+}
+
+footer h2 {
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Lato;
+    border-top: 1px solid #0F3F76;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 250px;
+    background-color: #ffffff;
+
+}
+
+.footer_container div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+    min-width: 100%;
+    background-color: #0F3F76;
+    color: #ffffff;
+}
+
+p {
+    padding-bottom: 5px;
+}
+
+.stay_tuned li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.contact_us li {
+    padding-bottom: 3px;
+}
+
+input {
+    margin-top: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+button {
+    height: 39px;
+}
