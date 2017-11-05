@@ -73,7 +73,6 @@ header {
     height: 100px;
     background-color: #fff;
     position: fixed;
-    box-shadow: 0 2px 5px 0 rgb(220,220,220), 0 6px 20px 0 rgb(220,220,220);
 }
 
 header img {
@@ -169,6 +168,45 @@ main {
     font-size: 20px;
     color: #fbfdff;
 }
+
+/* -----------------func---------------- */
+
+
+.functions {
+    padding-bottom: 100px;
+}
+
+.func_describe {
+    display: inline-flex;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+    height: 250px;
+    background: #fff;
+    width: 100%;
+    font-size: 16px;
+}
+
+.func_describe img {
+    width: 150px;
+    padding-right: 50px;
+}
+#function_list {
+    list-style: circle;
+}
+
+#function_list li {
+    padding-bottom: 5px;
+}
+
+@media (min-width: 900px) {
+    .func_describe {
+        width: 43%;
+
+}
+
+
+
     /* -----------------Footer/form---------------- */
 
 /*main {*/
@@ -237,3 +275,4 @@ footer input {
 footer button {
     height: 39px;
 }
+
