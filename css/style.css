@@ -30,8 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    min-height: 100%;
-    display: flex;
+    /*min-height: 100%;*/
+    /*display: flex;*/
     flex-direction: column;
 }
 ol, ul {
@@ -56,8 +56,8 @@ html, body {
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: 'Lato', sans-serif;
     background-color: #fff;
     font-size: 14px;
@@ -142,7 +142,6 @@ main {
     text-align: center;
     padding: 2em;
     margin: 0 5em;
-    width: 75em;
 }
 
 .banner h1 {
@@ -171,11 +170,6 @@ main {
 }
     /* -----------------Footer/form---------------- */
 
-/*main {*/
-    /*flex: 1 0 auto;*/
-/*}*/
-
-
 footer h2 {
     font-weight: bold;
     padding-bottom: 30px;
@@ -188,19 +182,18 @@ footer {
 }
 
 .footer_container {
+    padding: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 250px;
     background-color: #ffffff;
-    width: 100%;
 }
 
 .footer_container div {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 50px;
+    /*margin-top: 50px;*/
     max-width: 25%;
 }
 
