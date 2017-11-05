@@ -169,12 +169,41 @@ main {
     font-size: 20px;
     color: #fbfdff;
 }
+main{
+    height: 100%;
+    text-align: -moz-center;
+}
+main .about_team {
+    margin: 2em;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-align: center;
+}
+.about_team .name {
+    font-weight: bold;
+    font-size: 1.6em;
+    padding:1em 0em;
+}
+.about_team .proffesion{
+    font-size: 1.4em;
+
+}
+.about_team .LinkedIn{
+    padding-top: 1em;
+}
+.about_team img{
+    max-width: 200px;
+}
+
+
     /* -----------------Footer/form---------------- */
 
 /*main {*/
     /*flex: 1 0 auto;*/
 /*}*/
-
 
 footer h2 {
     font-weight: bold;
