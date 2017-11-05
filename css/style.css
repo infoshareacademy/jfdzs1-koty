@@ -131,6 +131,7 @@ header nav li a:hover {
 }
 
 .banner_text {
+    max-width: 100%;
     font-family: 'Lato', sans-serif;
     color: #fbfdff;
     background-color: rgba(15, 63, 118, 0.71);
@@ -192,8 +193,6 @@ main .about_team {
     max-width: 200px;
 }
 /* -----------------func---------------- */
-
-
 .functions {
     padding-bottom: 100px;
 }
@@ -224,7 +223,46 @@ main .about_team {
 @media (min-width: 900px) {
     .func_describe {
         width: 43%;
+    }
+}
+/*----------------------ADD INFO ABOUT PRODUCT-----------*/
 
+section.add_info {
+    background: #0F3F76;
+    color: #fbfdff;
+    font-size: 20px;
+    justify-content: center;
+    padding: 3rem 2rem 3rem 3rem;
+}
+
+section.add_info
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8 {
+    margin: 20px 0;
+    display: block;
+}
+
+section.add_info span {
+    font-size: 4rem;
+    margin-right: 2rem;
+}
+@media screen and (max-width: 799px) {
+    section.add_info,
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8 {
+        margin-bottom: 10px;
     }
 }
 
