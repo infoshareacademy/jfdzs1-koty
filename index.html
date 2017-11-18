@@ -3,24 +3,42 @@
     <head>
         <meta charset="UTF-8">
         <title>title</title>
-
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
+
     <body>
         <header>
-            <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Strona główna</a></li>
-                    <li><a href="">O produkcie</a></li>
-                    <li><a href="">zapisy</a></li>
-                    <li><a href="">O nas</a></li>
-                    <li><a href="">Info</a></li>
-                </ul>
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index.html"><img src="images/logo_poziom.svg" alt="logo"></a>
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#main">Strona główna</a></li>
+                            <li><a href="#product">O produkcie</a></li>
+                            <li><a href="#about_us">O nas</a></li>
+                            <li><a href="#info">Info</a></li>
+                            <li><a href="#contact">Zapisy</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
+
+
+
         </header>
         <div class="banner">
             <div class="banner_div">
@@ -34,66 +52,47 @@
             </div>
         </div>
         <main>
-            <div class="functions">
-                <div class="func_describe">
-                    <img src="https://image.flaticon.com/icons/svg/235/235178.svg"/>
-                    <ul id="function_list">
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                    </ul>
-                </div>
 
-                <div class="func_describe">
-                    <img src="https://image.flaticon.com/icons/svg/235/235230.svg"/>
-                    <ul id="function_list">
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                    </ul>
-                </div>
 
-                <div class="func_describe">
-                    <img src="https://image.flaticon.com/icons/svg/235/235188.svg"/>
-                    <ul id="function_list">
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                    </ul>
-                </div>
 
-                <div class="func_describe">
-                    <img src="https://image.flaticon.com/icons/svg/204/204323.svg"/>
-                    <ul id="function_list">
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                    </ul>
-                </div>
+            <!--FUNCTIONS-->
+            <div class="container-fluid">
+                <div class="functions row">
+                    <div class="col-sm-3">
+                        <div class="functions-element">
+                            <span class="glyphicon glyphicon-object-align-left"></span>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
 
-                <div class="func_describe">
-                    <img src="https://image.flaticon.com/icons/svg/234/234079.svg"/>
-                    <ul id="function_list">
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                    </ul>
-                </div>
+                    <div class="col-sm-3">
+                        <div class="functions-element">
+                            <span class="glyphicon glyphicon-piggy-bank"></span>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
 
-                <div class="func_describe">
-                    <img src="https://image.flaticon.com/icons/svg/234/234587.svg"/>
-                    <ul id="function_list">
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
-                        <li>Lorem ipsum dolor sit amet, cnsectetur adipisicing elit. </li>
-                    </ul>
+                    <div class="col-sm-3">
+                        <div class="functions-element">
+                            <span class="glyphicon glyphicon-hourglass"></span>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3">
+                        <div class="functions-element">
+                            <span class="glyphicon glyphicon-credit-card"></span>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-        </main>
+
+
         <!--ADDITIONAL INFO ABOUT PRODUCT-->
 
-        <section class="add_info">
+            <section class="add_info">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-6">
@@ -202,6 +201,73 @@
                 </div>
             </div>
         </section>
+        <!--ABOUT TEAM-->
+            <div class="about_team">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="person">
+                            <img src="images/149070.svg" />
+                            <div class="name">Anna Kowalska</div>
+                            <div class="proffesion">
+                                Developer
+                                <div class="LinkedIn">
+                                    <a href="https://pl.linkedin.com/in/anna-karwan-a20795b5">LinkedIn</a>
+                                </div>
+                                <div class="github">
+                                    <a href="https://github.com/annapawlicka">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="person">
+                            <img src="images/149070.svg" />
+                            <div class="name">Anna Kowalska</div>
+                            <div class="proffesion">
+                                Developer
+                                <div class="LinkedIn">
+                                    <a href="https://pl.linkedin.com/in/anna-karwan-a20795b5">LinkedIn</a>
+                                </div>
+                                <div class="github">
+                                    <a href="https://github.com/annapawlicka">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="person">
+                            <img src="images/149070.svg" />
+                            <div class="name">Anna Kowalska</div>
+                            <div class="proffesion">
+                                Developer
+                                <div class="LinkedIn">
+                                    <a href="https://pl.linkedin.com/in/anna-karwan-a20795b5">LinkedIn</a>
+                                </div>
+                                <div class="github">
+                                    <a href="https://github.com/annapawlicka">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="person">
+                            <img src="images/149071.svg" />
+                            <div class="name">Anna Kowalska</div>
+                            <div class="proffesion">
+                                Developer
+                                <div class="LinkedIn">
+                                    <a hr ef="https://pl.linkedin.com/in/anna-karwan-a20795b5">LinkedIn</a>
+                                </div>
+                                <div class="github">
+                                    <a href="https://github.com/annapawlicka">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--FOOTER-->
         <footer>
             <div class="footer_container">
                 <div class="footer_about">
