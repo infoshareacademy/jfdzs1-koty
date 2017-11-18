@@ -135,14 +135,13 @@ main {
 }
 
 .banner_text {
-    max-width: 100%;
     font-family: 'Lato', sans-serif;
     color: #fbfdff;
     background-color: rgba(15, 63, 118, 0.71);
     text-align: center;
     padding: 2em;
     margin: 0 5em;
-    width: 75em;
+    max-width: 75em;
 }
 
 .banner h1 {
