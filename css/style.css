@@ -60,7 +60,7 @@ body {
     padding: 0px;
     font-family: 'Lato', sans-serif;
     background-color: #fff;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /*********************************************************************************/
@@ -68,50 +68,36 @@ body {
 /*********************************************************************************/
 
 
-header {
-    width: 100%;
-    height: 100px;
+.navbar {
+    height: 80px;
     background-color: #fff;
-    position: fixed;
 }
 
-header img {
-    width: 90px;
-    height: 90px;
-    float: left;
-    margin: 5px 0px 5px 30px;
+
+.navbar-brand {
+    padding-top:15px;
+    min-width: 250px;
 }
 
-header nav {
-    height: 100px;
-    float: right;
-    margin: 10px 20px 10px;
-}
-
-header nav ul {
+.nav ul {
     margin: 0px;
     padding: 0px;
 }
 
-header nav li {
-    display: inline;
-    float: left;
-    margin-top: 28.5px;
+.nav li {
+    margin-top: 15px;
     padding-left: 10px;
 }
 
-header nav li a {
+.nav li a {
     font-weight: bold;
     color: #0F3F76;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     text-transform: uppercase;
-    margin-top: 40px;
-    padding: 8px;
-    border: 2px solid transparent;
 }
 
-header nav li a:hover {
+.nav li a:hover {
     color: #00A8B5;
 }
 
@@ -124,6 +110,7 @@ header nav li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
 }
 
 .banner_div {
@@ -165,9 +152,13 @@ header nav li a:hover {
     font-size: 20px;
     color: #fbfdff;
 }
+
 main{
     text-align: -moz-center;
 }
+
+
+/*ABOUT TEAM*/
 main .about_team {
     margin: 2em;
     padding: 0;
@@ -192,45 +183,30 @@ main .about_team {
 .about_team img{
     max-width: 200px;
 }
+
 /* -----------------func---------------- */
+
 .functions {
-    padding-bottom: 100px;
+    background-color: #fff;
+    color: #0F3F76;
+    padding:30px 0px;
 }
 
-.func_describe {
-    display: inline-flex;
-    justify-content: center;
+.functions-element {
+    text-align: center;
     padding: 30px;
-    align-items: center;
-    height: 250px;
-    background: #fff;
-    width: 100%;
-    font-size: 16px;
 }
 
-.func_describe img {
-    width: 150px;
-    padding-right: 50px;
-}
-#function_list {
-    list-style: circle;
+.functions-element span {
+    font-size: 4rem;
+    padding-bottom: 30px;
 }
 
-#function_list li {
-    padding-bottom: 5px;
-}
-
-@media (min-width: 900px) {
-    .func_describe {
-        width: 43%;
-    }
-}
 /*----------------------ADD INFO ABOUT PRODUCT-----------*/
 
 section.add_info {
     background: #0F3F76;
     color: #fbfdff;
-    font-size: 20px;
     justify-content: center;
     padding: 3rem 2rem 3rem 3rem;
 }
@@ -288,7 +264,8 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     height: 250px;
-    background-color: #ffffff;
+    background-color: #0F3F76;
+    color: white;
     width: 100%;
 }
 
@@ -305,10 +282,10 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100px;
+    height: 80px;
     min-width: 100%;
-    background-color: #0F3F76;
-    color: #ffffff;
+    background-color: #BCBEC0;
+    color: #0F3F76;
 }
 
 footer p {
