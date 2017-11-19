@@ -157,28 +157,13 @@ body {
     max-width: 75em;
 }
 
-@media screen and (max-width: 768px) {
-    .banner_text {
-        margin: 0;
-        max-width: 18em;
-        max-height: 12em;
-        padding: 1em;
-    }
-    .banner h1 {
-        font-size: 27px;
-    }
-}
-
-
-
-
 .banner h1 {
     font-size: 45px;
     margin-bottom: 10px;
 }
 
 .banner p {
-    font-size: 32px;
+    font-size: 20px;
 }
 
 .banner button {
@@ -272,11 +257,10 @@ section.add_info
 }
 
 section.add_info span {
-    font-size: 3.5rem;
+    font-size: 4rem;
     margin-right: 2rem;
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 799px) {
     section.add_info,
     .box1,
     .box2,
@@ -287,12 +271,6 @@ section.add_info span {
     .box7,
     .box8 {
         margin-bottom: 10px;
-    }
-    section.add_info span {
-        margin-bottom: 1rem;
-    }
-    .box_icon {
-        text-align: center;
     }
 }
 
