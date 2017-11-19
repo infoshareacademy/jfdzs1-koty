@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pl">>
     <head>
         <meta charset="UTF-8">
         <title>title</title>
@@ -12,11 +12,11 @@
     <body>
         <header>
             <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="fluid-container">
+                <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#navbar" aria-expanded="false">
+                                data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -25,34 +25,38 @@
                         <a class="navbar-brand" href="index.html"><img src="images/logo_poziom.svg" alt="logo"></a>
                     </div>
 
-                    <div id="navbar" class="collapse navbar-collapse">
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a class="link" href="#main">Strona główna</a></li>
-                            <li><a class="link" href="#product">O produkcie</a></li>
-                            <li><a class="link" href="#info">Info</a></li>
-                            <li><a class="link" href="#about_us">O nas</a></li>
-                            <!--<li><a href="#contact">Zapisy</a></li>-->
+                            <li><a href="#main">Strona główna</a></li>
+                            <li><a href="#product">O produkcie</a></li>
+                            <li><a href="#about_us">O nas</a></li>
+                            <li><a href="#info">Info</a></li>
+                            <li><a href="#contact">Zapisy</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
-        </header>
 
-        <div id="main" class="banner">
+
+
+        </header>
+        <div class="banner">
             <div class="banner_div">
                 <div class="banner_text">
                     <h1>Najszybsza wyszukiwarka dotacji unijnych i rządowych</h1>
-                    <p>Z nami szybko rozwiniesz żagle i obierzesz odpowiedni kierunek dla swojego biznesu!</p>
+                    <p>Rozwiń żagle i obierzesz odpowiedni kierunek dla swojego biznesu!</p>
                 </div>
                 <button>
-                    <a href="#contact">Newsletter</a>
+                    <a href="">Newsletter</a>
                 </button>
             </div>
         </div>
         <main>
 
+
+
             <!--FUNCTIONS-->
-            <div id="product" class="container-fluid">
+            <div class="container-fluid">
                 <div class="functions row">
                     <div class="col-sm-3">
                         <div class="functions-element">
@@ -84,153 +88,256 @@
                 </div>
             </div>
 
+
+
         <!--ADDITIONAL INFO ABOUT PRODUCT-->
 
-            <section id="info" class="add_info">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="box1">
-                            <div class="row">
-                                <div class="col-xs-2">
-                                    <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
-                                </div>
-                                <div class="col-xs-10">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <section class="add_info">
 
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="box2">
-                            <div class="row">
-                                <div class="col-xs-2">
-                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-                                </div>
-                                <div class="col-xs-10">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="box3">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="box1">
                                 <div class="row">
-                                    <div class="col-xs-2">
-                                        <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                                    <div class="col-xs-12 col-sm-2">
+                                        <div class="box_icon">
+                                            <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+                                        </div>
                                     </div>
-                                    <div class="col-xs-10">
+                                    <div class="col-xs-12 col-sm-10">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="box4">
-                            <div class="row">
-                                <div class="col-xs-2">
-                                    <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+                        <div class="col-sm-6">
+                            <div class="box2">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-2">
+                                        <div class="box_icon">
+                                            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-10">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.
+                                    </div>
                                 </div>
-                                <div class="col-xs-10">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="box2">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-2">
+                                        <div class="box_icon">
+                                            <span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-10">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="box2">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-2">
+                                        <div class="box_icon">
+                                            <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-10">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="box2">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-2">
+                                        <div class="box_icon">
+                                            <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-10">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.
+                                    </div>
+                                </div>
+                            </div>
+                        </div><div class="col-sm-6">
+                        <div class="box2">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-2">
+                                    <div class="box_icon">
+                                        <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-10">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="box5">
-                            <div class="row">
-                                <div class="col-xs-2">
-                                    <span class="glyphicon glyphicon-save" aria-hidden="true"></span>
-                                </div>
-                                <div class="col-xs-10">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="box6">
-                            <div class="row">
-                                <div class="col-xs-2">
-                                    <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-                                </div>
-                                <div class="col-xs-10">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.
+                        <div class="col-sm-6">
+                            <div class="box2">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-2">
+                                        <div class="box_icon">
+                                            <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-10">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="box7">
-                            <div class="row">
-                                <div class="col-xs-2">
-                                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-                                </div>
-                                <div class="col-xs-10">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6">
-                        <div class="box8">
-                            <div class="row">
-                                <div class="col-xs-2">
-                                    <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
-                                </div>
-                                <div class="col-xs-10">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.
+                        <div class="col-sm-6">
+                            <div class="box2">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-2">
+                                        <div class="box_icon">
+                                            <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-10">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!---->
+                <!---->
+            <!--<div class="container-fluid">-->
+                <!--<div class="row">-->
+                    <!--<div class="col-xs-12 col-sm-6">-->
+                        <!--<div class="box1">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-xs-12 col-sm-2">-->
+                                    <!--<div class="box_icon">-->
+                                        <!--<span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="col-xs-12 col-sm-10">-->
+                                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="col-xs-12 col-sm-6">-->
+                        <!--<div class="box2">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-xs-12 col-sm-2">-->
+                                    <!--<div class="box_icon">-->
+                                        <!--<span class="glyphicon glyphicon-user" aria-hidden="true"></span>-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="col-xs-12 col-sm-10">-->
+                                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="col-xs-12 col-sm-6">-->
+                        <!--<div class="box3">-->
+                                <!--<div class="row">-->
+                                    <!--<div class="col-xs-12 col-sm-2">-->
+                                        <!--<span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span>-->
+                                    <!--</div>-->
+                                    <!--<div class="col-xs-12 col-sm-10">-->
+                                        <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+
+                    <!--<div class="col-xs-12 col-sm-6">-->
+                        <!--<div class="box4">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-xs-12 col-sm-2">-->
+                                    <!--<span class="glyphicon glyphicon-send" aria-hidden="true"></span>-->
+                                <!--</div>-->
+                                <!--<div class="col-xs-12 col-sm-10">-->
+                                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="col-xs-12 col-sm-6">-->
+                        <!--<div class="box5">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-xs-12 col-sm-2">-->
+                                    <!--<span class="glyphicon glyphicon-save" aria-hidden="true"></span>-->
+                                <!--</div>-->
+                                <!--<div class="col-xs-12 col-sm-10">-->
+                                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="col-xs-12 col-sm-6">-->
+                        <!--<div class="box6">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-xs-12 col-sm-2">-->
+                                    <!--<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>-->
+                                <!--</div>-->
+                                <!--<div class="col-xs-12 col-sm-10">-->
+                                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="col-xs-12 col-sm-6">-->
+                        <!--<div class="box7">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-xs-12 col-sm-2">-->
+                                    <!--<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>-->
+                                <!--</div>-->
+                                <!--<div class="col-xs-12 col-sm-10">-->
+                                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+
+                    <!--<div class="col-xs-12 col-sm-6">-->
+                        <!--<div class="box8">-->
+                            <!--<div class="row">-->
+                                <!--<div class="col-xs-12 col-sm-2">-->
+                                    <!--<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>-->
+                                <!--</div>-->
+                                <!--<div class="col-xs-12 col-sm-10">-->
+                                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cum deleniti distinctio doloremque esse est eveniet iure labore, modi obcaecati perspiciatis placeat quam quidem quos reprehenderit sequi tenetur vel vitae.-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                </div>
             </div>
         </section>
-
-    <!--ABOUT TEAM-->
-
-            <div id="about_us" class="about_team">
+        <!--ABOUT TEAM-->
+            <div class="about_team">
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="person">
                             <img src="images/149070.svg" />
-                            <div class="name"> Zofia Subocz</div>
+                            <div class="name">Anna Kowalska</div>
                             <div class="proffesion">
                                 Developer
-
-                                    <div class="icons">
-                                        <a href="https://pl.linkedin.com/in/anna-karwan-a20795b5">
-                                            <img src="https://png.icons8.com/linkedin/androidL/22/0F3F76"/>
-                                        </a>
-
-                                        <a href="https://github.com/annapawlicka">
-                                        <img src="https://png.icons8.com/github/ios11/22/0F3F76"/></a>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="person">
-                            <img src="images/149070.svg" />
-                            <div class="name">Małgorzata Szydełko</div>
-                            <div class="proffesion">
-                                Developer
-                                <div class="icons">
-                                    <a href="https://pl.linkedin.com/in/anna-karwan-a20795b5">
-                                        <img src="https://png.icons8.com/linkedin/androidL/22/0F3F76"/>
-                                    </a>
-
-                                    <a href="https://github.com/annapawlicka">
-                                        <img src="https://png.icons8.com/github/ios11/22/0F3F76"/></a>
+                                <div class="LinkedIn">
+                                    <a href="https://pl.linkedin.com/in/anna-karwan-a20795b5">LinkedIn</a>
+                                </div>
+                                <div class="github">
+                                    <a href="https://github.com/annapawlicka">Github</a>
                                 </div>
                             </div>
                         </div>
@@ -238,16 +345,29 @@
                     <div class="col-sm-3">
                         <div class="person">
                             <img src="images/149070.svg" />
-                            <div class="name"> Katarzyna Tórz</div>
+                            <div class="name">Anna Kowalska</div>
                             <div class="proffesion">
                                 Developer
-                                <div class="icons">
-                                    <a href="https://pl.linkedin.com/in/anna-karwan-a20795b5">
-                                        <img src="https://png.icons8.com/linkedin/androidL/22/0F3F76"/>
-                                    </a>
-
-                                    <a href="https://github.com/annapawlicka">
-                                        <img src="https://png.icons8.com/github/ios11/22/0F3F76"/></a>
+                                <div class="LinkedIn">
+                                    <a href="https://pl.linkedin.com/in/anna-karwan-a20795b5">LinkedIn</a>
+                                </div>
+                                <div class="github">
+                                    <a href="https://github.com/annapawlicka">Github</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="person">
+                            <img src="images/149070.svg" />
+                            <div class="name">Anna Kowalska</div>
+                            <div class="proffesion">
+                                Developer
+                                <div class="LinkedIn">
+                                    <a href="https://pl.linkedin.com/in/anna-karwan-a20795b5">LinkedIn</a>
+                                </div>
+                                <div class="github">
+                                    <a href="https://github.com/annapawlicka">Github</a>
                                 </div>
                             </div>
                         </div>
@@ -255,16 +375,14 @@
                     <div class="col-sm-3">
                         <div class="person">
                             <img src="images/149071.svg" />
-                            <div class="name">Maciej Maczuga</div>
+                            <div class="name">Anna Kowalska</div>
                             <div class="proffesion">
                                 Developer
-                                <div class="icons">
-                                    <a href="https://pl.linkedin.com/in/anna-karwan-a20795b5">
-                                        <img src="https://png.icons8.com/linkedin/androidL/22/0F3F76"/>
-                                    </a>
-
-                                    <a href="https://github.com/annapawlicka">
-                                        <img src="https://png.icons8.com/github/ios11/22/0F3F76"/></a>
+                                <div class="LinkedIn">
+                                    <a hr ef="https://pl.linkedin.com/in/anna-karwan-a20795b5">LinkedIn</a>
+                                </div>
+                                <div class="github">
+                                    <a href="https://github.com/annapawlicka">Github</a>
                                 </div>
                             </div>
                         </div>
@@ -272,10 +390,8 @@
                 </div>
             </div>
         </main>
-
-    <!--FOOTER-->
-
-        <footer id="contact">
+        <!--FOOTER-->
+        <footer>
             <div class="footer_container">
                 <div class="footer_about">
                     <h2>Chcesz wiedzieć więcej?</h2>
