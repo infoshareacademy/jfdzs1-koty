@@ -182,6 +182,9 @@ main .about_team {
 .about_team img{
     max-width: 200px;
 }
+.github{
+    size: 20px;
+}
 
 /* -----------------func---------------- */
 
