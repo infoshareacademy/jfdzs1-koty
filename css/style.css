@@ -60,7 +60,7 @@ body {
     padding: 0;
     font-family: 'Lato', sans-serif;
     background-color: #fff;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 /*********************************************************************************/
@@ -68,59 +68,40 @@ body {
 /*********************************************************************************/
 
 
-header {
-    width: 100%;
-    height: 100px;
+.navbar {
+    height: 80px;
     background-color: #fff;
-    position: fixed;
-    box-shadow: 0 2px 5px 0 rgb(220,220,220), 0 6px 20px 0 rgb(220,220,220);
 }
 
-header img {
-    width: 90px;
-    height: 90px;
-    float: left;
-    margin: 5px 0px 5px 30px;
+
+.navbar-brand {
+    padding-top:15px;
+    min-width: 250px;
 }
 
-header nav {
-    height: 100px;
-    float: right;
-    margin: 10px 20px 10px;
-}
-
-header nav ul {
+.nav ul {
     margin: 0px;
     padding: 0px;
 }
 
-header nav li {
-    display: inline;
-    float: left;
-    margin-top: 28.5px;
+.nav li {
+    margin-top: 15px;
     padding-left: 10px;
 }
 
-header nav li a {
+.nav li a {
     font-weight: bold;
     color: #0F3F76;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
     text-transform: uppercase;
-    margin-top: 40px;
-    padding: 8px;
-    border: 2px solid transparent;
 }
 
-header nav li a:hover {
+.nav li a:hover {
     color: #00A8B5;
 }
 
 /* ---------------Banner-----------------------*/
-main {
-    height: 100%;
-}
-
 .banner {
     min-height: 100%;
     min-width: 100%;
@@ -129,6 +110,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
 }
 
 .banner_div {
@@ -168,7 +150,98 @@ main {
     font-size: 20px;
     color: #fbfdff;
 }
+
+main{
+    text-align: -moz-center;
+}
+
+
+/*ABOUT TEAM*/
+main .about_team {
+    margin: 2em;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    text-align: center;
+}
+.about_team .name {
+    font-weight: bold;
+    font-size: 1.6em;
+    padding:1em 0em;
+}
+.about_team .proffesion{
+    font-size: 1.4em;
+
+}
+.about_team .LinkedIn{
+    padding-top: 1em;
+}
+.about_team img{
+    max-width: 200px;
+}
+
+/* -----------------func---------------- */
+
+.functions {
+    background-color: #fff;
+    color: #0F3F76;
+    padding:30px 0px;
+}
+
+.functions-element {
+    text-align: center;
+    padding: 30px;
+}
+
+.functions-element span {
+    font-size: 4rem;
+    padding-bottom: 30px;
+}
+
+/*----------------------ADD INFO ABOUT PRODUCT-----------*/
+
+section.add_info {
+    background: #0F3F76;
+    color: #fbfdff;
+    justify-content: center;
+    padding: 3rem 2rem 3rem 3rem;
+}
+
+section.add_info
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8 {
+    margin: 20px 0;
+    display: block;
+}
+
+section.add_info span {
+    font-size: 4rem;
+    margin-right: 2rem;
+}
+@media screen and (max-width: 799px) {
+    section.add_info,
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8 {
+        margin-bottom: 10px;
+    }
+}
+
     /* -----------------Footer/form---------------- */
+
 
 footer h2 {
     font-weight: bold;
@@ -186,7 +259,11 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: #ffffff;
+    height: 250px;
+    background-color: #0F3F76;
+    color: white;
+    width: 100%;
+
 }
 
 .footer_container div {
@@ -202,10 +279,10 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100px;
+    height: 80px;
     min-width: 100%;
-    background-color: #0F3F76;
-    color: #ffffff;
+    background-color: #BCBEC0;
+    color: #0F3F76;
 }
 
 footer p {
