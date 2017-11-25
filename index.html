@@ -2,11 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>title</title>
+        <title>Wyszukiwarka dotacji</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <!--<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">-->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css" type="text/css">
+
     </head>
 
     <body>
@@ -281,44 +283,29 @@
             </div>
         </main>
 
-    <!--FOOTER-->
-
-        <footer id="contact">
-            <div class="footer_container">
-                <div class="footer_about">
-                    <h2>Chcesz wiedzieć więcej?</h2>
-                    <p>Lorem ipsum dolor sit amet, <consectetur class=""></consectetur></p>
-                </div>
-                <div class="stay_tuned">
-                    <h2>Śledź nas</h2>
-                    <p>Obserwuj nas w mediach społecznościowych</p>
-                    <ul>
-                        <li>Facebook-icon</li>
-                        <li>Tweeter-icon</li>
-                        <li>Instagram-icon</li>
-                    </ul>
-                </div>
-                <div class="email_updates">
-                    <h2>Newsletter</h2>
-                    <p>Wyślemy Ci maila z informacją, że nasz produkt jest już gotowy! Twój adres emailowe nie zostanie użyty do innego celu!</p>
-                    <form>
-                        <input type="email" placeholder="yourmail@adress.com">
-                        <button>Send</button>
+        <div class="container-fluid">
+            <div class="row footergroup">
+                <div class="col-xs-12 col-md-12 contact">
+                    <h1>Bądź z nami na premierze!</h1>
+                    <p>Twój adres emailowy zostanie użyty przez nas tylko RAZ, w momencie
+                        wysłania do Ciebie powiadomienia o premierze. Twoje dane są chronione i nie będą użyte do innego celu.</p>
+                    <form action="https://formspree.io/maczugamaciek@gmail.com" method="POST">
+                        <div class="input-group col-centered">
+                            <input type="text" class="form-control" placeholder="Twój adres email">
+                            <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Wyślij</button>
+                     </span>
+                        </div>
                     </form>
-                </div>
-                <div class="contact_us">
-                    <h2>Skontaktuj się z nami</h2>
-                    <ul>
-                        <li>70-100</li>
-                        <li>Szczecin</li>
-                        <li>ul. Świetna 666</li>
-                        <li>666 666 000</li>
-                    </ul>
+                    <div class="adres">
+                        <p>Koty Studios, 71-441 Szczecin, Cyfrowa 2-8, Budynek F1, biuro 666 -<span>MAPA</span>- tel. 345-345-345</p>
+                    </div>
                 </div>
             </div>
-            <p class="copyright">Copyright © 2008 MadCats</p>
-        </footer>
-        <script src="../bootstrap/jquery.min.js"></script>
-        <script src="../bootstrap/bootstrap.min.js"></script>
+        </div>
+
+
+        <script src="/bootstrap/js/jquery.min.js"></script>
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
     </body>
 </html>

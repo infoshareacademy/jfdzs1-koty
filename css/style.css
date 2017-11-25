@@ -30,8 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
-    min-height: 100%;
-    display: flex;
+    /*min-height: 100%;*/
+    /*display: flex;*/
     flex-direction: column;
 }
 ol, ul {
@@ -56,8 +56,8 @@ html, body {
 }
 
 body {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     font-family: 'Lato', sans-serif;
     background-color: #fff;
     font-size: 16px;
@@ -154,7 +154,6 @@ body {
     text-align: center;
     padding: 2em;
     margin: 0 5em;
-    max-width: 75em;
 }
 
 @media screen and (max-width: 768px) {
@@ -284,67 +283,65 @@ section.add_info span {
     }
 }
 
-    /* -----------------Footer/form---------------- */
+/* -----------------Footer/form---------------- */
 
-footer h2 {
-    font-weight: bold;
-    padding-bottom: 30px;
+.col-centered{
+    margin: 0 auto;
+    float: none;
 }
 
-footer {
-    width: 100%;
-    font-family: Lato;
-    border-top: 1px solid #0F3F76;
-}
-
-.footer_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 250px;
+.footergroup {
     background-color: #0F3F76;
+    margin-top: 20px;
+}
+
+.contact {
+    padding: 50px 50px 15px 50px;
     color: white;
-    width: 100%;
 }
-
-.footer_container div {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 50px;
-    max-width: 25%;
-}
-
-.copyright {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contact h1 {
+    font-size: 34px;
+    padding-bottom: 15px;
+    font-weight: 300;
     text-align: center;
-    height: 80px;
-    min-width: 100%;
+}
+.contact p {
+    padding: 15px;
+    line-height: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #FFFFFF;
+    border-color: #b4b4b4;
+}
+
+.smicon {
+    max-height: 60px;
+}
+
+.footergroup li {
+    display: inline;
+}
+
+.input-group {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    max-width: 300px;
+}
+
+.adres {
+
     background-color: #0F3F76;
-    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    color: white;
 }
 
-footer p {
-    padding-bottom: 5px;
-}
+.adres p {
+    padding-top: 20px;
+    border-top: 1px solid rgba(3, 166, 135, 0.82);
 
-.stay_tuned li {
-    display: inline-block;
-    padding: 5px;
-}
-
-.contact_us li {
-    padding-bottom: 3px;
-}
-
-footer input {
-    margin-top: 10px;
-    padding: 10px;
-    width: 200px;
-}
-
-footer button {
-    height: 39px;
 }
