@@ -253,11 +253,11 @@ section.add_info span {
 }
 
 .contact {
-    padding: 50px;
+    padding: 50px 50px 15px 50px;
     color: white;
 }
 .contact h1 {
-    font-size: 28px;
+    font-size: 34px;
     padding-bottom: 15px;
     font-weight: 300;
     text-align: center;
@@ -270,8 +270,8 @@ section.add_info span {
 
 .btn-default {
     color: #333;
-    background-color: #03A687;
-    border-color: #03A687;
+    background-color: #FFFFFF;
+    border-color: #b4b4b4;
 }
 
 .smicon {
@@ -283,13 +283,21 @@ section.add_info span {
 }
 
 .input-group {
+    padding-top: 20px;
+    padding-bottom: 40px;
     max-width: 300px;
 }
 
 .adres {
-    font-size: 22px;
-    padding-bottom: 15px;
-    font-weight: 200;
+
+    background-color: #0F3F76;
+    font-size: 15px;
     text-align: center;
     color: white;
+}
+
+.adres p {
+    padding-top: 20px;
+    border-top: 1px solid rgba(3, 166, 135, 0.82);
+
 }
