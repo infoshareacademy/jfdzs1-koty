@@ -31,8 +31,6 @@ footer, header, hgroup, menu, nav, section {
 body {
     font-size: 10px;
     line-height: 1;
-    /*min-height: 100%;*/
-    /*display: flex;*/
     flex-direction: column;
 }
 ol, ul {
@@ -72,7 +70,6 @@ body {
 .navbar {
     height: 100px;
     background-color: #fff;
-    /*opacity: 0.96;*/
 }
 
 .navbar-header {
@@ -370,5 +367,4 @@ section.add_info span {
 .adres p {
     padding-top: 20px;
     border-top: 1px solid rgba(3, 166, 135, 0.82);
-
 }
