@@ -29,9 +29,8 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
+    font-size: 10px;
     line-height: 1;
-    /*min-height: 100%;*/
-    /*display: flex;*/
     flex-direction: column;
 }
 ol, ul {
@@ -71,7 +70,6 @@ body {
 .navbar {
     height: 100px;
     background-color: #fff;
-    opacity: 0.96;
 }
 
 .navbar-header {
@@ -118,7 +116,7 @@ body {
     font-weight: bold;
     color: #0F3F76;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.2em;
     text-transform: uppercase;
     border: 2px solid transparent;
 
@@ -144,12 +142,13 @@ body {
 
     .navbar-default .navbar-nav>li>a {
 
-        font-size: 16px;
+        font-size: 1em;
 
     }
 
     .navbar-nav {
         padding-right: 2rem;
+        text-align: center;
     }
 
 }
@@ -163,7 +162,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*margin-top: 80px;*/
+    margin-top: 100px;
 }
 
 .banner_div {
@@ -185,17 +184,17 @@ body {
          padding: 1em;
      }
      .banner h1 {
-         font-size: 27px;
+         font-size: 2.7em;
      }
  }
 
 .banner h1 {
-    font-size: 45px;
+    font-size: 4em;
     margin-bottom: 10px;
 }
 
 .banner p {
-    font-size: 32px;
+    font-size: 2.8em;
 }
 
 .banner button {
@@ -210,8 +209,9 @@ body {
     text-decoration: none;
     height: 20px;
     width: 50px;
-    font-size: 20px;
+    font-size: 1.5em;
     color: #fbfdff;
+    text-transform: uppercase;
 }
 
 main{
@@ -224,7 +224,7 @@ main .about_team {
     margin: 2em;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 1em;
     font: inherit;
     vertical-align: baseline;
     text-align: center;
@@ -262,7 +262,7 @@ main .about_team {
 }
 
 .functions-element span {
-    font-size: 4rem;
+    font-size: 4em;
     padding-bottom: 30px;
 }
 
@@ -319,11 +319,11 @@ section.add_info span {
 }
 
 .contact {
-    padding: 50px 50px 15px 50px;
+    padding: 50px 50px 0px 50px;
     color: white;
 }
 .contact h1 {
-    font-size: 34px;
+    font-size: 2.6em;
     padding-bottom: 15px;
     font-weight: 300;
     text-align: center;
@@ -333,6 +333,7 @@ section.add_info span {
     line-height: 18px;
     font-weight: 300;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .btn-default {
@@ -356,15 +357,14 @@ section.add_info span {
 }
 
 .adres {
-
     background-color: #0F3F76;
-    font-size: 15px;
+    font-size: 1em;
     text-align: center;
     color: white;
+    margin: 10px;
 }
 
 .adres p {
     padding-top: 20px;
     border-top: 1px solid rgba(3, 166, 135, 0.82);
-
 }
