@@ -345,3 +345,47 @@ section.add_info span {
     border-top: 1px solid rgba(3, 166, 135, 0.82);
 
 }
+
+
+/*-------------------cookie banner -------------------*/
+
+.cookie-banner-container {
+    background-color: rgba(15, 79, 145, 0.8);
+    color: #FFFFFF;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 10px;
+    top: 150px;
+    border: 1px #03A687 solid;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.51);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+.cookie-banner-container-hidden {
+    display: none;
+}
+
+
+.cookie-button {
+    color: #000000;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+.cookie-banner-container h3 {
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.cookie-banner-container p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-bottom: 15px;
+}
