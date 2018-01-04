@@ -243,6 +243,23 @@ main .about_team {
 .github{
     size: 20px;
 }
+.person img{
+    backface-visibility: hidden;
+    transtion: all 1s;
+}
+.person .back{
+     position: absolute;
+     top: 0px;
+     left: 50%;
+     margin-left:-100px;
+     transform: rotateY(180deg);
+}
+.person.hover .front{
+    transform: rotateY(180deg);
+}
+.person.hover .back{
+    transform: rotateY(0deg);
+}
 
 /* -----------------func---------------- */
 
