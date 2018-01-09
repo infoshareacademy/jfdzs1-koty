@@ -154,21 +154,27 @@ body {
 }
 
 /* ---------------Banner-----------------------*/
-.banner {
-    min-height: 100%;
-    min-width: 100%;
-    background-image: url("../images/boat18.jpg");
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
+
+.carousel-inner .item img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
 }
 
-.banner_div {
-    text-align: center;
+#carousel-generic button {
+    background-color: rgb(15, 63, 118);
+    margin: 1em;
+    width: 12em;
+    height: 3em;
+    border: none;
 }
 
+#carousel-generic button a {
+    text-decoration: none;
+    height: 20px;
+    width: 50px;
+    font-size: 1.5em;
+    color: #fbfdff;
+}
 .banner_text {
     font-family: 'Lato', sans-serif;
     color: #fbfdff;
@@ -178,44 +184,34 @@ body {
     margin: 0 5em;
 }
 
+#carousel-generic h1 {
+    font-size: 2.7em;
+}
+
+#carousel-generic p {
+    font-size: 2em;
+    margin-top: 0.8em;
+}
+
+
 @media screen and (max-width: 768px) {
-     .banner_text {
-         margin: 0;
-         padding: 1em;
-     }
-     .banner h1 {
-         font-size: 2.7em;
-     }
- }
-
-.banner h1 {
-    font-size: 4em;
-    margin-bottom: 10px;
-}
-
-.banner p {
-    font-size: 2.8em;
-}
-
-.banner button {
-    background-color: rgb(15, 63, 118);
-    margin: 2em;
-    width: 12em;
-    height: 3em;
-    border: none;
-}
-
-.banner button a {
-    text-decoration: none;
-    height: 20px;
-    width: 50px;
-    font-size: 1.5em;
-    color: #fbfdff;
-    text-transform: uppercase;
-}
-
-main{
-    text-align: -moz-center;
+    .carousel {
+    height: 38em;
+    }
+    .banner_text {
+        padding: 0.8em;
+        margin: 0;
+    }
+    #carousel-generic h1 {
+        font-size: 1.7em;
+    }
+    #carousel-generic p {
+        font-size: 1em;
+        margin-top: 0.5em;
+    }
+    carousel-generic button a {
+        font-size: 1em;
+    }
 }
 
 
