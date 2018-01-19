@@ -29,9 +29,8 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 body {
+    font-size: 10px;
     line-height: 1;
-    /*min-height: 100%;*/
-    /*display: flex;*/
     flex-direction: column;
 }
 ol, ul {
@@ -60,7 +59,18 @@ body {
     padding: 0;
     font-family: 'Lato', sans-serif;
     background-color: #fff;
-    font-size: 16px;
+    font-size: 14px;
+}
+
+header,
+nav,
+a,
+img,
+li {
+    transition: .7s all;
+    -moz-transition: .7s all;
+    -webkit-transition: .7s all;
+    -o-transition: .7s all;
 }
 
 /*********************************************************************************/
@@ -69,11 +79,14 @@ body {
 
 
 .navbar {
-    height: 100px;
+    /*height: 100px;*/
     background-color: #fff;
-    opacity: 0.96;
+    position: fixed;
 }
 
+.navbar-header {
+    /*height: 90px;*/
+}
 
 .navbar-brand {
     padding:1rem 0 0 3rem;
@@ -86,16 +99,35 @@ body {
     padding-right: 4rem;
 }
 
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: #03A687;
+
+}
+
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #03A687;
+}
+
 .navbar-default .navbar-nav>li {
     margin-top: 15px;
     padding-left: 10px;
+    padding-bottom: 20px;
 }
+
+.navbar-default .navbar-toggle {
+    border-color: #03A687;
+}
+
 
 .navbar-default .navbar-nav>li>a {
     font-weight: bold;
     color: #0F3F76;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.2em;
     text-transform: uppercase;
     border: 2px solid transparent;
 
@@ -108,45 +140,89 @@ body {
 }
 
 
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #03A687;
+    background-color: transparent;
+    border: 2px solid #03A687;
+}
+
+.large_nav {
+    height: 100px;
+}
+
+.small_nav {
+    height: 60px;
+    opacity: 0.95;
+}
+
+.small_nav .navbar-nav {
+    padding-top: 0;
+}
+
+.small_nav .navbar-nav li {
+    margin-top: 0;
+}
+
+.small_nav .navbar-nav li a {
+    margin-top:5px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.small_nav img{
+    height: 45px;
+    margin: -10px;
+}
+
+
 @media (max-width: 970px) {
     .navbar-brand {
-        padding: 1.3rem 0;
+        padding: 1rem 0;
         min-width: 250px;
     }
 
     .navbar-default .navbar-nav>li {
+        padding: 5px 0px;
+        margin-top: 0px;
 
-        padding-left: 0px;
     }
 
     .navbar-default .navbar-nav>li>a {
 
-        font-size: 16px;
+        font-size: 1em;
 
     }
 
     .navbar-nav {
-        padding-right: 2rem;
+        opacity: 0.9;
+        padding-right: 0;
+        text-align: center;
     }
 
 }
 
 /* ---------------Banner-----------------------*/
-.banner {
-    min-height: 100%;
-    min-width: 100%;
-    background-image: url("../images/boat18.jpg");
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*margin-top: 80px;*/
+
+.carousel-inner .item img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
 }
 
-.banner_div {
-    text-align: center;
+#carousel-generic button {
+    background-color: rgb(15, 63, 118);
+    margin: 1em;
+    width: 12em;
+    height: 3em;
+    border: none;
 }
 
+#carousel-generic button a {
+    text-decoration: none;
+    height: 20px;
+    width: 50px;
+    font-size: 1.5em;
+    color: #fbfdff;
+}
 .banner_text {
     font-family: 'Lato', sans-serif;
     color: #fbfdff;
@@ -156,43 +232,34 @@ body {
     margin: 0 5em;
 }
 
+#carousel-generic h1 {
+    font-size: 2.7em;
+}
+
+#carousel-generic p {
+    font-size: 2em;
+    margin-top: 0.8em;
+}
+
+
 @media screen and (max-width: 768px) {
-     .banner_text {
-         margin: 0;
-         padding: 1em;
-     }
-     .banner h1 {
-         font-size: 27px;
-     }
- }
-
-.banner h1 {
-    font-size: 45px;
-    margin-bottom: 10px;
-}
-
-.banner p {
-    font-size: 32px;
-}
-
-.banner button {
-    background-color: rgb(15, 63, 118);
-    margin: 2em;
-    width: 12em;
-    height: 3em;
-    border: none;
-}
-
-.banner button a {
-    text-decoration: none;
-    height: 20px;
-    width: 50px;
-    font-size: 20px;
-    color: #fbfdff;
-}
-
-main{
-    text-align: -moz-center;
+    .carousel {
+    height: 38em;
+    }
+    .banner_text {
+        padding: 0.8em;
+        margin: 0;
+    }
+    #carousel-generic h1 {
+        font-size: 1.7em;
+    }
+    #carousel-generic p {
+        font-size: 1em;
+        margin-top: 0.5em;
+    }
+    carousel-generic button a {
+        font-size: 1em;
+    }
 }
 
 
@@ -201,7 +268,7 @@ main .about_team {
     margin: 2em;
     padding: 0;
     border: 0;
-    font-size: 100%;
+    font-size: 1em;
     font: inherit;
     vertical-align: baseline;
     text-align: center;
@@ -224,6 +291,23 @@ main .about_team {
 .github{
     size: 20px;
 }
+.person img{
+    backface-visibility: hidden;
+    transtion: all 1s;
+}
+.person .back{
+     position: absolute;
+     top: 0px;
+     left: 50%;
+     margin-left:-100px;
+     transform: rotateY(180deg);
+}
+.person.hover .front{
+    transform: rotateY(180deg);
+}
+.person.hover .back{
+    transform: rotateY(0deg);
+}
 
 /* -----------------func---------------- */
 
@@ -239,7 +323,7 @@ main .about_team {
 }
 
 .functions-element span {
-    font-size: 4rem;
+    font-size: 4em;
     padding-bottom: 30px;
 }
 
@@ -296,11 +380,11 @@ section.add_info span {
 }
 
 .contact {
-    padding: 50px 50px 15px 50px;
+    padding: 50px 50px 0px 50px;
     color: white;
 }
 .contact h1 {
-    font-size: 34px;
+    font-size: 2.6em;
     padding-bottom: 15px;
     font-weight: 300;
     text-align: center;
@@ -310,6 +394,7 @@ section.add_info span {
     line-height: 18px;
     font-weight: 300;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .btn-default {
@@ -333,23 +418,22 @@ section.add_info span {
 }
 
 .adres {
-
     background-color: #0F3F76;
-    font-size: 15px;
+    font-size: 1em;
     text-align: center;
     color: white;
+    margin: 10px;
 }
 
 .adres p {
     padding-top: 20px;
     border-top: 1px solid rgba(3, 166, 135, 0.82);
-
 }
 
 
 /*-------------------cookie banner -------------------*/
 
-.cookie-banner-container {
+#cookie-banner-container {
     background-color: rgba(15, 79, 145, 0.8);
     color: #FFFFFF;
     position: fixed;
@@ -357,17 +441,12 @@ section.add_info span {
     right: 0;
     margin-left: auto;
     margin-right: 0;
-    padding: 10px;
-    top: 150px;
+    padding: 40px 10px 20px 10px;
+    bottom: 0%;
     border: 1px #03A687 solid;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.51);
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    z-index: 99;
 }
-.cookie-banner-container-hidden {
-    display: none;
-}
-
 
 .cookie-button {
     color: #000000;
@@ -377,14 +456,14 @@ section.add_info span {
 
 }
 
-.cookie-banner-container h3 {
+#cookie-banner-container h3 {
     font-size: 1.2rem;
     padding: 10px;
     text-align: center;
 
 }
 
-.cookie-banner-container p {
+#cookie-banner-container p {
     font-size: 1rem;
     line-height: 1.2rem;
     margin-bottom: 15px;
