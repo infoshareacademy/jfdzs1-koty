@@ -293,7 +293,7 @@ main .about_team {
 }
 .person img{
     backface-visibility: hidden;
-    transtion: all 1s;
+    transition: all 1s;
 }
 .person .back{
      position: absolute;
