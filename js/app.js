@@ -36,11 +36,11 @@ $(function() {
 $(document).on("scroll", function() {
 
     if($(document).scrollTop()>100) {
-        $("#navbar").removeClass("large_nav").addClass("small_nav");
+        $("#scroll_navbar").removeClass("large_nav").addClass("small_nav");
         $("#logo").attr("src","images/logo.svg");
 
     } else {
-        $("#navbar").removeClass("small_nav").addClass("large_nav");
+        $("#scroll_navbar").removeClass("small_nav").addClass("large_nav");
         $("#logo").attr("src","images/logo_poziom.svg");
     }
 
