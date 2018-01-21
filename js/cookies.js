@@ -6,7 +6,7 @@ function setCookie(name, val, days, path, domain, secure) {
     if (navigator.cookieEnabled) { //czy ciasteczka są włączone
         const cookieName = encodeURIComponent(name);
         const cookieVal = encodeURIComponent(val);
-        let cookieText = cookieName + "=" + cookieVal;
+        var cookieText = cookieName + "=" + cookieVal;
 
         if (typeof days === "number") {
             const data = new Date();
@@ -35,9 +35,8 @@ document.querySelector('.cookie-button').addEventListener('click', function() {
 });
 
 function checkCookie() {
-    if (document.cookie) {
+    if (document.cookie === 'myCookie=user') {
         document.getElementById('cookie-banner-container').style.display = 'none';
     }
 }
-
 checkCookie();
