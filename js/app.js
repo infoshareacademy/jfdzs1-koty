@@ -57,3 +57,31 @@ $('.person').hover(function () {
 });
 
 
+
+//GAME FOR E-MAIL
+
+//onclick wywołujemy funkcję game()
+
+
+
+var startGame = document.getElementById('submit-mail');
+startGame.addEventListener('click', function(){
+    game.init();
+});
+
+var game = {
+        init: function () {
+            this.createGameBoard();
+            console.log("hej");
+
+        },
+        createGameBoard: function(){
+            var wraper = document.getElementById('game-region');
+            var gameBoard = document.createElement('div');
+            wraper.appendChild(gameBoard);
+
+
+        }
+    }
+
+
