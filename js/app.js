@@ -78,10 +78,16 @@ var game = {
         createGameBoard: function(){
             var wraper = document.getElementById('game-region');
             var gameBoard = document.createElement('div');
+            var template;
+
+            template = ''
+            + '<div class="gameBoard">'
+            +    '<div class="game_circle"></div>'
+            +  '</div>';
+
+            gameBoard.innerHTML = template;
             wraper.appendChild(gameBoard);
-
-
         }
-    }
+    };
 
 

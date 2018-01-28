@@ -489,3 +489,38 @@ section.add_info span {
     line-height: 1.2rem;
     margin-bottom: 15px;
 }
+
+
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background-color: #101010;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: .3s linear;
+}
+
+/*GAME*/
+
+.game_board {
+    height: 400px;
+    background-color: #9acfea;
+    margin-top: -15px;
+}
+
+.game_circle {
+    width: 50px;
+    height: 50px;
+    background-color: #101010;
+    margin-top: 150px;
+    margin-left: : 50px;
+    /*position: absolute;*/
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: .3s linear;
+}
+
