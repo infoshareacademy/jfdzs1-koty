@@ -83,7 +83,6 @@ var game = {
 
         },
         createResultsModal: function () {
-            var wraper = document.getElementById('game-region');
             var modalDiv= document.createElement("div");
             var modalTemplate;
 
@@ -107,9 +106,8 @@ var game = {
                 '   </div>\n' +
                 ' </div>\n' +
                 '</div>';
-
-
-            modalDiv.appendChild(modalTemplate);
+            modalDiv.innerHTML=modalTemplate;
+            document.body.appendChild(modalDiv);
         }
     }
 
