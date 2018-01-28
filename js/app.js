@@ -81,6 +81,35 @@ var game = {
             wraper.appendChild(gameBoard);
 
 
+        },
+        createResultsModal: function () {
+            var wraper = document.getElementById('game-region');
+            var modalDiv= document.createElement("div");
+            var modalTemplate;
+
+            modalTemplate= '' +
+                '<div class="modal" tabindex="-1" role="dialog">\n' +
+                ' <div class="modal-dialog" role="document">\n' +
+                '   <div class="modal-content">\n' +
+                '     <div class="modal-header">\n' +
+                '       <h5 class="modal-title">Modal title</h5>\n' +
+                '       <button type="button" class="close" data-dismiss="modal" aria-label="Close">\n' +
+                '         <span aria-hidden="true">&times;</span>\n' +
+                '       </button>\n' +
+                '     </div>\n' +
+                '     <div class="modal-body">\n' +
+                '       <p>Modal body text goes here.</p>\n' +
+                '     </div>\n' +
+                '     <div class="modal-footer">\n' +
+                '       <button type="button" class="btn btn-primary">Save changes</button>\n' +
+                '       <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>\n' +
+                '     </div>\n' +
+                '   </div>\n' +
+                ' </div>\n' +
+                '</div>';
+
+
+            modalDiv.appendChild(modalTemplate);
         }
     }
 
