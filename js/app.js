@@ -79,7 +79,7 @@ var game = {
             var wraper = document.getElementById('game-region');
             var gameBoard = document.createElement('div');
             wraper.appendChild(gameBoard);
-
+            
 
         }
     }
