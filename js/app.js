@@ -79,7 +79,7 @@ var game = {
             var wraper = document.getElementById('game-region');
             var gameBoard = document.createElement('div');
             var template;
-            
+
             template = ''
             + '<div class="gameBoard">'
             +    '<div class="game_circle"></div>'

@@ -224,9 +224,10 @@ element.style {
 
 /* ---------------Banner-----------------------*/
 
-.carousel-inner .item img {
-    width: -webkit-fill-available;
-    height: -webkit-fill-available;
+.carousel-inner .item {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
 }
 
 #carousel-generic button {
@@ -264,9 +265,6 @@ element.style {
 
 
 @media screen and (max-width: 768px) {
-    .carousel {
-    height: 38em;
-    }
     .banner_text {
         padding: 0.8em;
         margin: 0;
@@ -510,6 +508,7 @@ section.add_info span {
     height: 400px;
     background-color: #9acfea;
     margin-top: -15px;
+    height: 100vh;
 }
 
 .game_circle {
@@ -517,7 +516,7 @@ section.add_info span {
     height: 50px;
     background-color: #101010;
     margin-top: 150px;
-    margin-left: : 50px;
+    margin-left:50px;
     /*position: absolute;*/
     transform: translate(-50%, -50%);
     border-radius: 50%;
