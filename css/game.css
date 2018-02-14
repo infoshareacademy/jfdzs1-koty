@@ -14,3 +14,19 @@ body {
     border-radius: 50%;
     transition: .10s linear;
 }
+
+
+
+.obstacles {
+    width: 50px;
+    height: 50px;
+    background-color: #0f0f0f;
+    transition: .10s linear;
+}
+
+.obstacles {
+    width: 50px;
+    height: 50px;
+    background-color: #ad8f16;
+    transition: .10s linear;
+}

@@ -21,3 +21,36 @@ const move = (e) => {
 
 window.addEventListener("keydown", move)
 
+// ********************//
+// OBSTACLES AND COINS //
+//*********************//
+
+function obstaclesAndCoins () {
+
+    const gameBoard = document.getElementsByClassName("game_board");
+    var objects = [];
+    var startTime = Date.now();
+
+    var obstacle = document.createElement("div");
+    obstacle.classList.add("obstacle");
+
+    var coin = document.createElement("div");
+    coin.classList.add("coin");
+
+
+    
+    function throwRandomObject() {
+        var objectTipe;
+
+        if (Math.random() < 0.50) {
+            objectTipe = obstacle;
+        } else {
+            objectTipe = coin;
+        }
+    }
+
+
+
+
+}
+
