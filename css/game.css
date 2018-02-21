@@ -22,16 +22,19 @@ body {
 
 
 
-.obstacles {
+.obstacle {
     width: 50px;
     height: 50px;
     background-color: #0f0f0f;
-    transition: .10s linear;
+    position: absolute;
+    /*transition: .10s linear;*/
 }
 
-.obstacles {
+.coin {
     width: 50px;
     height: 50px;
     background-color: #ad8f16;
-    transition: .10s linear;
+    position: absolute;
+    /*transition: .10s linear;*/
 }
+
