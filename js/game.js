@@ -36,7 +36,7 @@ window.addEventListener("keydown", move);
 // OBSTACLES AND COINS //
 //*********************//
 
-function obstaclesAndCoins () {
+function obstaclesAndCoins() {
 
     var gameBoard = document.getElementById("game_board");
     var objects = [];
@@ -58,41 +58,40 @@ function obstaclesAndCoins () {
 //ta funcja musi być w timeoutcie
 
     function throwOnBoard() {
-        var object = throwRandomObject();
+        var selectedElement = throwRandomObject();
 
-        if (object === "obstacle") {
+        if (selectedElement === "obstacle") {
             var obstacle = document.createElement("div");
             obstacle.classList.add("obstacle");
-            object = obstacle;
+            selectedElement = obstacle;
+
         } else {
             var coin = document.createElement("div");
             coin.classList.add("coin");
-            object = coin;
+            selectedElement = coin;
         }
-
-        var objectOnBoard = {
-            type: object,
-            x: divWidth + "px",
-            y: Math.random() * (divHeight - 50) + "px"
-        };
-
-        // object.style.top = objectOnBoard.y;
-        // object.style.left = objectOnBoard.x;
-
-            console.log(objectOnBoard);
-            //ustawmy x i y  przeszkody (pozycja), x jako szerokość planszy + 50px, wysokość randamowo w granicach wysokości planszy
+        
+        function placeSelectedElement() {
+            selectedElement.style.position = "absolute";
+            selectedElement.style.left = divWidth - 20 +'px';
+            selectedElement.style.top = Math.random() * (divHeight - 50) + "px";
+        }
+        placeSelectedElement();
+        console.log(selectedElement);
+        //ustawmy x i y  przeszkody (pozycja), x jako szerokość planszy + 50px, wysokość randamowo w granicach wysokości planszy
 
 
         //dodać obiekt do gameBoard (append)
+        gameBoard.append(selectedElement);
+
         // window.requestAnimationFrame i przesuwać x obiektu w lewo ok 5px
-            gameBoard.append(objectOnBoard);
-            objects.push(objectOnBoard);
+            objects.push(selectedElement);
             console.log(objects);
+
         }
 
+        setInterval(throwOnBoard(), 1000);
 
-        setTimeout(throwOnBoard(), 500);
-    }
 
 
 //na koniec każdy obiekt który wychodzy poza planszę usówamy z domu i tabicy objects, pętla w requestAnimationFrame która będzie sprawdzać czy jest poza planszą
@@ -101,4 +100,5 @@ function obstaclesAndCoins () {
 window.onresize = function() {
     resize();
 };
+
 obstaclesAndCoins();
