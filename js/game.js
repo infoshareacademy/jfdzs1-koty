@@ -36,7 +36,7 @@ window.addEventListener("keydown", move);
 // OBSTACLES AND COINS //
 //*********************//
 
-function obstaclesAndCoins() {
+
 
     var gameBoard = document.getElementById("game_board");
     var objects = [];
@@ -54,9 +54,6 @@ function obstaclesAndCoins() {
         return objectType;
     }
 
-
-//ta funcja musi być w timeoutcie
-
     function throwOnBoard() {
         var selectedElement = throwRandomObject();
 
@@ -70,35 +67,40 @@ function obstaclesAndCoins() {
             coin.classList.add("coin");
             selectedElement = coin;
         }
-        
+
         function placeSelectedElement() {
             selectedElement.style.position = "absolute";
-            selectedElement.style.left = divWidth - 20 +'px';
+            selectedElement.style.left = divWidth - 20 + 'px';
             selectedElement.style.top = Math.random() * (divHeight - 50) + "px";
         }
+
         placeSelectedElement();
         console.log(selectedElement);
-        //ustawmy x i y  przeszkody (pozycja), x jako szerokość planszy + 50px, wysokość randamowo w granicach wysokości planszy
 
-
-        //dodać obiekt do gameBoard (append)
         gameBoard.append(selectedElement);
 
-        // window.requestAnimationFrame i przesuwać x obiektu w lewo ok 5px
-            objects.push(selectedElement);
-            console.log(objects);
+        function move() {
+            selectedElement.style.left =  parseInt(selectedElement.offsetLeft, 10) - 5 + 'px';
 
+            if(parseInt(selectedElement.offsetLeft, 10) <= 10) {
+               gameBoard.removeChild(selectedElement);
+            }
+            window.requestAnimationFrame(move);
         }
+        window.requestAnimationFrame(move);
 
-        setInterval(throwOnBoard(), 1000);
+        objects.push(selectedElement);
+        console.log(objects);
+
+    }
 
 
+    var gameTime = setInterval(throwOnBoard,1000);
+    setTimeout(function() { clearInterval(gameTime); }, 30000);
 
-//na koniec każdy obiekt który wychodzy poza planszę usówamy z domu i tabicy objects, pętla w requestAnimationFrame która będzie sprawdzać czy jest poza planszą
 
 
 window.onresize = function() {
-    resize();
+resize();
 };
 
-obstaclesAndCoins();
