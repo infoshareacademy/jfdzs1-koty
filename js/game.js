@@ -36,8 +36,6 @@ window.addEventListener("keydown", move);
 // OBSTACLES AND COINS //
 //*********************//
 
-
-
     var gameBoard = document.getElementById("game_board");
     var objects = [];
     var startTime = Date.now();
@@ -75,7 +73,6 @@ window.addEventListener("keydown", move);
         }
 
         placeSelectedElement();
-        console.log(selectedElement);
 
         gameBoard.append(selectedElement);
 
@@ -90,17 +87,11 @@ window.addEventListener("keydown", move);
         window.requestAnimationFrame(move);
 
         objects.push(selectedElement);
-        console.log(objects);
-
     }
-
 
     var gameTime = setInterval(throwOnBoard,1000);
     setTimeout(function() { clearInterval(gameTime); }, 30000);
 
-
-
 window.onresize = function() {
 resize();
 };
-
