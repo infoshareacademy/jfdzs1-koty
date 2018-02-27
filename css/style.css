@@ -310,6 +310,48 @@ main .about_team {
 .github{
     size: 20px;
 }
+.front_square{
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+#img_Zofia_Subocz{
+    width:200px;
+    height: 200px;
+    background-image: url("Zofia_Subocz.jpg");
+    border-radius: 50%;
+    background-position: 9px -15px;
+    background-size: cover;
+}
+#img_Zofia_Subocz{
+    width:200px;
+    height: 200px;
+    background-image: url("Malgorzata_Szydelko.jpg");
+    border-radius: 50%;
+    background-position: 9px -15px;
+    background-size: cover;
+}
+#img_Zofia_Subocz{
+    width:200px;
+    height: 200px;
+    background-image: url("Katarzyna_Torz.jpg");
+    border-radius: 50%;
+    background-position: 9px -15px;
+    background-size: cover;
+}
+#img_Zofia_Subocz{
+    width:200px;
+    height: 200px;
+    background-image: url("Maciej_Maczug.jpg");
+    border-radius: 50%;
+    background-position: 9px -15px;
+    background-size: cover;
+}
+
 .person img{
     backface-visibility: hidden;
     transition: all 1s;
