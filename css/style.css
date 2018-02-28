@@ -316,29 +316,28 @@ main .about_team {
     width: 184px;
     height: 184px;
     overflow: hidden;
-    border: 1px solid black;
     border-radius: 50%;
 }
 #img_Zofia_Subocz{
     width: 184px;
     height:184px;
-    background-image: url("...");
+    background-image: url("../images/Zofia_Subocz.jpg");
     border-radius: 50%;
-    background-position: 9px -15px;
+    background-position: -2px -1px;
     background-size: cover;
 }
 #img_Malgorzata_Szydelko{
     width: 184px;
     height: 184px;
-    background-image: url("...");
+    background-image: url("../images/Malgorzata_Szydelko.jpg");
     border-radius: 50%;
-    background-position: 9px -15px;
+    background-position: -1px -8px;
     background-size: cover;
 }
 #img_Katarzyna_Torz{
     width:184px;
     height:184px;
-    background-image: url("...");
+    background-image: url("../images/Katarzyna_Torz.jpg");
     border-radius: 50%;
     background-position: 9px -15px;
     background-size: cover;
@@ -346,10 +345,24 @@ main .about_team {
 #img_Maciej_Maczuga{
     width:184px;
     height:184px;
-    background-image: url("...");
+    background-image: url("../images/Maciej_Maczug.jpg");
     border-radius: 50%;
-    background-position: 9px -15px;
+    background-position: -7px -30px;
     background-size: cover;
+}
+#img Maciej_Maczuga: before{
+    position: absolute;
+    width: 184px;
+    height: 184px;
+    top: -50%;
+    right: -50%;
+    z-index: -1;
+    background-image: url("../images/Maciej_Maczug.jpg");
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);
 }
 
 .person img{
