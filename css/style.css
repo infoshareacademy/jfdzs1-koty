@@ -351,25 +351,13 @@ main .about_team {
     background-position: -7px -30px;
     background-size: cover;
 }
-#img Maciej_Maczuga: before{
-    position: absolute;
-    width: 184px;
-    height: 184px;
-    top: -50%;
-    right: -50%;
-    z-index: -1;
-    background-image: url("../images/Maciej_Maczug.jpg");
-    -webkit-transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    -o-transform: rotate(30deg);
-    transform: rotate(30deg);
-}
+
 
 .person img{
     backface-visibility: hidden;
     transition: all 1s;
 }
+
 .person .back {
     position: absolute;
     top: -12px;
