@@ -317,6 +317,7 @@ main .about_team {
     height: 184px;
     overflow: hidden;
     border-radius: 50%;
+    transform: rotateY (180deg);
 }
 #img_Zofia_Subocz{
     width: 184px;
@@ -369,16 +370,19 @@ main .about_team {
     backface-visibility: hidden;
     transition: all 1s;
 }
-.person .back{
-     position: absolute;
-     top: -12px;
-     left: 50%;
-     margin-left:-100px;
-     transform: rotateY(180deg);
-}
-.person.hover .front{
+.person .back {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    margin-left: -100px;
     transform: rotateY(180deg);
 }
+
+
+.person.hover .front_square{
+    transform: rotateY(-90deg);
+}
+
 .person.hover .back{
     transform: rotateY(0deg);
 }
