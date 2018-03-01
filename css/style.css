@@ -310,20 +310,67 @@ main .about_team {
 .github{
     size: 20px;
 }
+.front_square{
+    display: inline-block;
+    position: relative;
+    width: 184px;
+    height: 184px;
+    overflow: hidden;
+    border-radius: 50%;
+    transform: rotateY (180deg);
+}
+#img_Zofia_Subocz{
+    width: 184px;
+    height:184px;
+    background-image: url("../images/Zofia_Subocz.jpg");
+    border-radius: 50%;
+    background-position: -2px -1px;
+    background-size: cover;
+}
+#img_Malgorzata_Szydelko{
+    width: 184px;
+    height: 184px;
+    background-image: url("../images/Malgorzata_Szydelko.jpg");
+    border-radius: 50%;
+    background-position: -1px -8px;
+    background-size: cover;
+}
+#img_Katarzyna_Torz{
+    width:184px;
+    height:184px;
+    background-image: url("../images/Katarzyna_Torz.jpg");
+    border-radius: 50%;
+    background-position: 9px -15px;
+    background-size: cover;
+}
+#img_Maciej_Maczuga{
+    width:184px;
+    height:184px;
+    background-image: url("../images/Maciej_Maczug.jpg");
+    border-radius: 50%;
+    background-position: -7px -30px;
+    background-size: cover;
+}
+
+
 .person img{
     backface-visibility: hidden;
     transition: all 1s;
 }
-.person .back{
-     position: absolute;
-     top: 0px;
-     left: 50%;
-     margin-left:-100px;
-     transform: rotateY(180deg);
-}
-.person.hover .front{
+
+.person .back {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    margin-left: -100px;
     transform: rotateY(180deg);
 }
+
+
+.person.hover .front_square{
+    transform: rotateY(-90deg);
+}
+
 .person.hover .back{
     transform: rotateY(0deg);
 }
