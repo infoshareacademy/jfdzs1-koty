@@ -3,6 +3,11 @@ body {
     background-color: #2aabd2;
 }
 
+#game_board {
+    width: 100%;
+    height: 100%;
+}
+
 .game_circle {
     width: 50px;
     height: 50px;
@@ -14,3 +19,20 @@ body {
     border-radius: 50%;
     transition: .10s linear;
 }
+
+.obstacle {
+    width: 50px;
+    height: 50px;
+    background-color: #0f0f0f;
+    position: absolute;
+    /*transition: .10s linear;*/
+}
+
+.coin {
+    width: 50px;
+    height: 50px;
+    background-color: #ad8f16;
+    position: absolute;
+    /*transition: .10s linear;*/
+}
+
